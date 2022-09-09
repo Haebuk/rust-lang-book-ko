@@ -507,7 +507,7 @@ impl<T> Cacher<T>
 `Some` 안에 있는 값을 반환 합니다.
 
 만약 `self.value` 가 `None` 이라면, `self.calculation` 에 저장된 클로저를 호출
-하고, 나중에 재사용 하기 위해 결과를 `self.value` 저장한 다음 그 값을 반환
+하고, 나중에 재사용 하기 위해 결과를 `self.value` 에 저장한 다음 그 값을 반환
 합니다.
 
 리스트 13-11 는 리스트 13-6 에 있는 `generate_workout` 함수에서 이 `Cacher` 구조
